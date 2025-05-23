@@ -41,6 +41,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+const routes = [
+  {
+    path: "/",
+    element: <Outlet />,
+  },
+];
+
 export default function App() {
   return <Outlet />;
 }
